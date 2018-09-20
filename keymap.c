@@ -51,18 +51,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       OSM(MOD_LCTL),     ALT_T(KC_BSLS), ALT_CMD,    KC_LEFT,     KC_RIGHT,
                                                                               ____,  TT(MEDIA),
                                                                                           ____,
-                                                        OSL(CHARNUM), GUI_T(KC_TAB),KC_DELETE,
+                                                        OSL(CHARNUM), OSM(MOD_RGUI),KC_DELETE,
 
 
       // right hand
       KC_ESC,  KC_6,       KC_7,       KC_8,       KC_9,     KC_0,            KC_BSPC,
       ____,    KC_Y,       KC_U,       KC_I,       KC_O,     KC_P,            KC_QUOT,
                KC_H,       KC_J,       KC_K,       KC_L,     LT(2,KC_SCOLON), RGUI_T(KC_ENTER),
-      KC_MINS, KC_N,       KC_M,       KC_COMMA,   KC_DOT,   RCTL_T(KC_SLASH),OSM(MOD_RSFT),
+      KC_MINS, KC_N,       KC_M,       KC_COMMA,   KC_DOT,   KC_SLASH,        OSM(MOD_RSFT),
                            KC_UP,      KC_DOWN,    KC_LBRC,  KC_RBRC,         TG(2),
       ____,    ____,
       ____,
-      KC_BSPC,    GUI_T(KC_ENTER),   KC_SPACE),
+      ____,    KC_BSPC,   KC_SPACE),
 
   // Numpad, function keys, and shifted punctuation
   [CHARNUM] = LAYOUT_ergodox(
